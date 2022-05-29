@@ -1,0 +1,772 @@
+[
+  {
+    "type": "code",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "inst": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "instruction",
+            "named": true
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_array",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_bin_array",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_dec_array",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_hex_array",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_reserve",
+    "named": true,
+    "fields": {
+      "count": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      },
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "data_string",
+    "named": true,
+    "fields": {
+      "export": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "export",
+            "named": false
+          }
+        ]
+      },
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "null": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "null",
+            "named": false
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "include",
+    "named": true,
+    "fields": {
+      "only": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "seg",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "string",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_option",
+    "named": true,
+    "fields": {
+      "param": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "param",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "param_value_equ",
+    "named": true,
+    "fields": {
+      "param": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "param",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "param",
+            "named": true
+          },
+          {
+            "type": "seg_label",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "param_value_set",
+    "named": true,
+    "fields": {
+      "param": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "param",
+            "named": true
+          }
+        ]
+      },
+      "value": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "relocate",
+    "named": true,
+    "fields": {
+      "address": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "param",
+            "named": true
+          }
+        ]
+      },
+      "seg": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "seg",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "seg_label",
+    "named": true,
+    "fields": {
+      "label": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "label",
+            "named": true
+          }
+        ]
+      },
+      "seg": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "seg",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "segment",
+    "named": true,
+    "fields": {
+      "address": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "number",
+            "named": true
+          },
+          {
+            "type": "param",
+            "named": true
+          }
+        ]
+      },
+      "def": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "code",
+            "named": true
+          },
+          {
+            "type": "data_array",
+            "named": true
+          },
+          {
+            "type": "data_bin_array",
+            "named": true
+          },
+          {
+            "type": "data_dec_array",
+            "named": true
+          },
+          {
+            "type": "data_hex_array",
+            "named": true
+          },
+          {
+            "type": "data_reserve",
+            "named": true
+          },
+          {
+            "type": "data_string",
+            "named": true
+          },
+          {
+            "type": "include",
+            "named": true
+          },
+          {
+            "type": "param_option",
+            "named": true
+          },
+          {
+            "type": "param_value_equ",
+            "named": true
+          },
+          {
+            "type": "param_value_set",
+            "named": true
+          },
+          {
+            "type": "relocate",
+            "named": true
+          },
+          {
+            "type": "segment",
+            "named": true
+          }
+        ]
+      },
+      "seg": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "seg",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {
+      "def": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "code",
+            "named": true
+          },
+          {
+            "type": "data_array",
+            "named": true
+          },
+          {
+            "type": "data_bin_array",
+            "named": true
+          },
+          {
+            "type": "data_dec_array",
+            "named": true
+          },
+          {
+            "type": "data_hex_array",
+            "named": true
+          },
+          {
+            "type": "data_reserve",
+            "named": true
+          },
+          {
+            "type": "data_string",
+            "named": true
+          },
+          {
+            "type": "include",
+            "named": true
+          },
+          {
+            "type": "param_option",
+            "named": true
+          },
+          {
+            "type": "param_value_equ",
+            "named": true
+          },
+          {
+            "type": "param_value_set",
+            "named": true
+          },
+          {
+            "type": "relocate",
+            "named": true
+          },
+          {
+            "type": "segment",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "@code",
+    "named": false
+  },
+  {
+    "type": "@data",
+    "named": false
+  },
+  {
+    "type": "@include",
+    "named": false
+  },
+  {
+    "type": "@param",
+    "named": false
+  },
+  {
+    "type": "@relocate",
+    "named": false
+  },
+  {
+    "type": "@segment",
+    "named": false
+  },
+  {
+    "type": "[",
+    "named": false
+  },
+  {
+    "type": "]",
+    "named": false
+  },
+  {
+    "type": "a0",
+    "named": false
+  },
+  {
+    "type": "a1",
+    "named": false
+  },
+  {
+    "type": "a2",
+    "named": false
+  },
+  {
+    "type": "array",
+    "named": false
+  },
+  {
+    "type": "bin",
+    "named": false
+  },
+  {
+    "type": "comment",
+    "named": true
+  },
+  {
+    "type": "dec",
+    "named": false
+  },
+  {
+    "type": "end",
+    "named": false
+  },
+  {
+    "type": "equ",
+    "named": false
+  },
+  {
+    "type": "export",
+    "named": false
+  },
+  {
+    "type": "fp",
+    "named": false
+  },
+  {
+    "type": "hex",
+    "named": false
+  },
+  {
+    "type": "instruction",
+    "named": true
+  },
+  {
+    "type": "label",
+    "named": true
+  },
+  {
+    "type": "null",
+    "named": false
+  },
+  {
+    "type": "number",
+    "named": true
+  },
+  {
+    "type": "only",
+    "named": false
+  },
+  {
+    "type": "option",
+    "named": false
+  },
+  {
+    "type": "param",
+    "named": true
+  },
+  {
+    "type": "reserve",
+    "named": false
+  },
+  {
+    "type": "rp",
+    "named": false
+  },
+  {
+    "type": "s0",
+    "named": false
+  },
+  {
+    "type": "s1",
+    "named": false
+  },
+  {
+    "type": "s2",
+    "named": false
+  },
+  {
+    "type": "s3",
+    "named": false
+  },
+  {
+    "type": "s4",
+    "named": false
+  },
+  {
+    "type": "s5",
+    "named": false
+  },
+  {
+    "type": "s6",
+    "named": false
+  },
+  {
+    "type": "seg",
+    "named": true
+  },
+  {
+    "type": "set",
+    "named": false
+  },
+  {
+    "type": "sp",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": false
+  },
+  {
+    "type": "string",
+    "named": true
+  },
+  {
+    "type": "v0",
+    "named": false
+  },
+  {
+    "type": "v1",
+    "named": false
+  },
+  {
+    "type": "v2",
+    "named": false
+  },
+  {
+    "type": "v3",
+    "named": false
+  },
+  {
+    "type": "value",
+    "named": false
+  },
+  {
+    "type": "zr",
+    "named": false
+  }
+]
