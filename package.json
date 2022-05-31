@@ -8,6 +8,9 @@
     },
     "author": "Terrain",
     "license": "MIT",
+    "dependencies": {
+        "nan": "^2.15.0"
+    },
     "tree-sitter": [
         {
             "scope": "source.phinix",
